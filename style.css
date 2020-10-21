@@ -1,0 +1,125 @@
+html body{
+    height: 100vh;
+    
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+        --color-bg:#ac67ef;
+        --color-button-text:#ffff;
+        --color-button-light:#99d75c;
+        --color-button-dark:#76a748;
+        --color-text:#f7f8f3;
+        --color-box-dice:#f7f8f3;
+        --color-number:#0000;
+        font-size: 60%;
+}
+body {
+    background-color:var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dice-choice{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:6rem;
+}
+.dice-choice h2{
+    font:700 5.2rem Archivo Narrow;
+    color:var(--color-text);
+}
+.dice-chosen{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4.2rem;
+    justify-content: center;
+
+}
+.dice-chosen button {
+    margin: 3rem;
+}
+.btn-dices{
+    padding:2rem ;
+    border: none;
+    border-radius: 0.8rem;
+    font: 700 1.8rem Archivo Narrow;
+    color: var(--color-button-text);
+    background-color: var(--color-button-light);
+    transition: 2s;
+}
+.btn-dices:hover{
+    background-color: var(--color-button-dark);
+    cursor: pointer;
+}
+
+.hero-img{
+    display: flex;
+    align-items: flex;
+    justify-content: center;
+    height: 40%;
+}
+#example{
+    font: 700 1.8rem Archivo Narrow;
+    color: var(--color-text);
+}
+#roll-area{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-button-light);
+    color: var(--color-button-text);
+    border: none;
+    border-radius: 0.8rem;
+    margin: 1.8rem;
+    width: 20rem;
+    font: 700 3.8rem Archivo Narrow
+}
+#result-title{
+    font: 700 3.8rem Archivo Narrow;
+}
+
+/* Responsividade*/
+@media screen and (max-width:768px){
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        }
+    .dice-choice h2{
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+    .btn-dices{
+        padding: 0.9rem;
+        border: none;
+        border-radius: 0.8rem;
+        font: 700 1.4rem Archivo Narrow;
+        color: var(--color-button-text);
+        background-color: var(--color-button-light);
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+        transition: 2s;
+    }
+  .dice-chosen button {
+    margin: 0.5rem;
+    
+}
+  }   

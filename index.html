@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Carvalho">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&display=swap" rel="stylesheet">
+    
+    <title>Rola ou não rola | Dados eletrônicos</title>
+</head>
+
+<body id="page-landing">
+    <div class="dice-choice">
+        <h2>Escolha seu dado</h2>
+       
+    </div>
+    <p id="example">Exemplo: D6= dado de 6 faces</p>
+    <div class="dice-chosen">
+            <button type="submit" id='d4-btn' class="btn-dices" onclick="rolarD4()">D4</button>
+            <button type="submit" id='d6-btn' class="btn-dices" onclick="rolarD6()">D6</button>
+            <button type="submit" id='d8-btn' class="btn-dices" onclick="rolarD8()">D8</button>
+            <button type="submit" id='d10-btn' class="btn-dices" onclick="rolarD10()">D10</button>
+            <button type="submit" id='d12-btn' class="btn-dices" onclick="rolarD12()">D12</button>
+            <button type="submit" id='d20-btn' class="btn-dices"onclick="rolarD20()">D20</button>
+            <button type="submit" id='d100-btn' class="btn-dices"onclick="rolarD100()">D100</button>
+    </div>
+        <h2 id="result-title">Resultado</h2>  
+    <div id="roll-area">
+        <p>Rolagem</p>
+    </div>
+    
+   <div class="hero-img">
+        <img src="undraw_super_woman_dv0y.svg" alt="Super woman">
+    </div>
+    
+    <script src="mecanics.js"></script>
+</body>
+</html>
