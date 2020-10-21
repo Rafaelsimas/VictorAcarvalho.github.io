@@ -1,0 +1,51 @@
+*:root{
+    --color-background:#2e2d2d;
+    --color-buttons-background:#474747;
+    --color-buttons-text:#d6d6d6;
+    --color-result-background:#edfab9;
+    --color-result-text:#0a0a0a;
+}
+body{
+    background:var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin-top: 12rem;
+}
+header{
+    width: 10rem;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 0.8rem;
+}
+#visor{
+    color: var(--color-result-text);
+    background: var(--color-result-background);
+    border: 0;
+    border-radius: 0.8rem;
+}
+.allButtons input{
+    background: var(--color-buttons-background);
+    color: var(--color-buttons-text);
+    border-radius: 50%;
+    border:0;
+    margin: 0.3rem;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+}
+
+footer{
+    font: 700;
+    font-family: 'Inconsolata', monospace;
+    margin-top: 2rem;
+    margin-left:0.8rem ;
+    color: var(--color-buttons-text);
+}
